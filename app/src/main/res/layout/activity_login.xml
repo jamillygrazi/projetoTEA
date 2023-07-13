@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="1dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="248dp"
             app:srcCompat="@drawable/logo_tea1" />
@@ -26,26 +26,37 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="149dp"
+            android:layout_height="83dp"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="VAMOS FORTALECER A REDE DE APOIO AO AUTISMO"
+            android:text="TEA Capitão Poço"
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25px"
+            android:ems="10"
+            android:hint="email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25px"
+            android:ems="10"
+            android:hint="senha"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LOGIN"
-            android:textColor="#FFFFFF"
-            app:backgroundTint="#7ED857" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CADASTRO"
+            android:layout_marginBottom="25px"
+            android:text="ENTRAR"
             android:textColor="#FFFFFF"
             app:backgroundTint="#7ED857" />
 
