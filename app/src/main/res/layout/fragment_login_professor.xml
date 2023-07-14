@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginProfessorFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@drawable/funfo"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="125px"
+        android:paddingEnd="125px">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            app:srcCompat="@drawable/logo_tea1" />
+
+        <Button
+            android:id="@+id/buttonEditarAluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar Aluno"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7ED857" />
+
+        <Button
+            android:id="@+id/buttonListarAluno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lista de Alunos"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#7ED857" />
+
+    </LinearLayout>
 
 </FrameLayout>

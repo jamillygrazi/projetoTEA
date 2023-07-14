@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroProfessorFragment">
+    tools:context=".DadosAlunoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,19 +15,13 @@
         android:paddingStart="125px"
         android:paddingEnd="125px">
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="248dp"
-            app:srcCompat="@drawable/logo_tea1" />
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="149dp"
             android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:text="CADASTRO PROFESSOR"
+            android:text="DADOS DO ALUNO"
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
@@ -44,15 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Nome de Usuário"
-            android:inputType="text" />
-
-        <EditText
-            android:id="@+id/PlainTextEscola"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Escola em que trabalha"
+            android:hint="Escola"
             android:inputType="text" />
 
         <EditText
@@ -64,21 +50,68 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/SenhaProfessor"
+            android:id="@+id/editTextText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Senha"
-            android:inputType="textPassword" />
+            android:hint="Endereço"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nível"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Observações"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Dificuldade"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Atividades"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextText8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Desempenho"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Metas"
+            android:inputType="text" />
 
         <Button
             android:id="@+id/buttonCadastrarAluno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CADASTRAR"
+            android:text="SALVAR ALTERAÇÕES"
             android:textColor="#FFFFFF"
             app:backgroundTint="#7ED857" />
 
     </LinearLayout>
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
