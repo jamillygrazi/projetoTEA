@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-<<<<<<< HEAD
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
@@ -62,6 +61,4 @@
             app:backgroundTint="#7ED857" />
 
     </LinearLayout>
-=======
->>>>>>> origin/master
 </androidx.constraintlayout.widget.ConstraintLayout>
