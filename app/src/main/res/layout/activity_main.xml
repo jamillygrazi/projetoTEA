@@ -49,5 +49,12 @@
             android:textColor="#FFFFFF"
             app:backgroundTint="#7ED857" />
 
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="95dp"
+            android:layout_height="81dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
