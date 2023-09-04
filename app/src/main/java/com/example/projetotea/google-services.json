@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "284766887472",
+    "project_id": "projetotea-1130a",
+    "storage_bucket": "projetotea-1130a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284766887472:android:376004c0324332606b17f5",
+        "android_client_info": {
+          "package_name": "com.example.projetotea"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv22Sx4vGtwrmmCZb0iermyJ5TLgf6_Z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
