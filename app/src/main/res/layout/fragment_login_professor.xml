@@ -39,4 +39,37 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="50px"
+        android:paddingTop="50px"
+        android:paddingRight="50px"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/textViewBoasVindas"
+            android:layout_width="430dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="#000000"
+            android:shadowRadius="7"
+            android:text=" Olá, "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#F8F8F8"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSettings"
+            android:layout_width="49dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_oval"
+            android:drawableBottom="@drawable/baseline_settings_24"
+            android:paddingLeft="2dp"
+            android:paddingBottom="12dp" />
+
+    </LinearLayout>
+
 </FrameLayout>

@@ -6,13 +6,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 
 public class CadastroActivity extends AppCompatActivity {
 
-    private Button buttonAlunoFamilia;
-    private Button buttonProfessor;
-//    private FragmentContainerView fragmentContainerView;
+    private Button buttonAlunoFamilia, buttonProfessor;
     private FrameLayout framelayout1;
     private CadastroAlunoFragment cadAlunoFragment;
     private CadastroProfessorFragment cadProfessorFragment;
@@ -47,5 +46,7 @@ public class CadastroActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 }

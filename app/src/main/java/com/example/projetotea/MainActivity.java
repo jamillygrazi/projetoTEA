@@ -23,9 +23,12 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
+
+
     private Button buttonCadastro;
     private Button buttonLogin;
 
@@ -83,6 +86,18 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     LOCATION_PERMISSION_REQUEST);
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseUser usuarioatual = FirebaseAuth.getInstance().getCurrentUser();
+
+        if(usuarioatual != null){
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
         }
     }
 
